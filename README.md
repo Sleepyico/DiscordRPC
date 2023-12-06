@@ -9,12 +9,6 @@ This plugin is designed for users of Unreal Engine 5. It will help you to create
   * Base plugin with Discord SDK intergation  
 * Lewis/CusYaBasic &
 * Laith aka Iconical [(Me)](https://github.com/babyico)
-  * 5.3 update
-  * Fix type error with TimeStamps
-  * Added ```GetStartTimeStamp``` function
-  * Created ```DiscordGameInstance``` class
-  * Combind initial setup into one node ```SetDiscordPresence```
-  * various minor fixes
 
 ## Installation
 
