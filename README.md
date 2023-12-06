@@ -5,7 +5,7 @@ This plugin is designed for users of Unreal Engine 5. It will help you to create
 ![ExampleFeed](https://user-images.githubusercontent.com/47295080/147773806-fbaae57b-51e7-400f-a1a4-88a92bd77bd4.png)
 
 # Credits
-* LouisRaverdy (OP: https://github.com/LouisRaverdy/DiscordRPC)
+* LouisRaverdy [(OP)](https://github.com/LouisRaverdy/DiscordRPC)
   * Base plugin with Discord SDK intergation  
 * Lewis/CusYaBasic &
 * Laith aka Iconical [(Me)](https://github.com/babyico)
@@ -18,7 +18,7 @@ This plugin is designed for users of Unreal Engine 5. It will help you to create
 
 ## Installation
 
-1) Dowload this repostory
+1) Dowload plugin zip from [Releases](https://github.com/babyico/DiscordRPC/releases)
 2) Extract the repo
 3) Copy all content to your plugin project (YourProject/Plugins)
 4) Make sure you are register on [Discord developer website](https://discord.com/developers/applications  "Discord Developer Website")
@@ -26,6 +26,8 @@ This plugin is designed for users of Unreal Engine 5. It will help you to create
 6) Open your project and enable the plugin
 
 ## Initialization 5.3
+
+https://github.com/babyico/DiscordRPC.wiki.git
 
 Version 5.3 has changed a little bit. it now has ```DiscordGameInstance``` class which handles most of the logic for you; streamlining the process, making it much faster to get up and running.
 
