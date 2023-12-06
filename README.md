@@ -7,7 +7,7 @@ This plugin is designed for users of Unreal Engine 5. It will help you to create
 # Credits
 * LouisRaverdy [(OP)](https://github.com/LouisRaverdy/DiscordRPC)
   * Base plugin with Discord SDK intergation  
-* Lewis/CusYaBasic &
+* Lewis/CusYaBasic
 * Laith aka Iconical [(Me)](https://github.com/babyico)
 
 ## Installation
