@@ -24,51 +24,51 @@ class DISCORDRPC_API UDiscordGameInstance : public UGameInstance
 
 public:	
 
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			UDiscordRpc* DiscordRpc;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString ApplicationId;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString OptionalSteamID;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString State;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString Details;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString LargeImageKey;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString LargeImageText;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString SmallImageKey;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString SmallImageText;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString PartyId;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString MatchSecret;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString JoinSecret;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			FString SpectateSecret;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			int PartySize;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			int PartyMax;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			bool Instance;
-		UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DiscordRPC")
 			int64 StampRef;
 private:
 	virtual void Shutdown() override;
 
 public:
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Discord RPC Settings")
 		void SetDiscordPresence(EDiscordPresenceState PresenceState);
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Discord RPC Settings")
 		void SetBasicPresence(FString instate, FString indetails, FString inlargeimagekey, FString inlargeimagetext);
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Discord RPC Settings")
 		void SetAllPresence(FString instate, FString indetails, FString inlargeimagekey, FString inlargeimagetext, FString insmallimagekey, FString insmallimagetext, FString inpartyid, FString inmatchsecret, FString injoinsecret, FString inspectatesecret, int inpartysize, int inpartymax, bool ininstance);
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "Discord RPC Settings")
 		void SetAppIDs(FString inapplicationid, FString inoptionalsteamid);
 };
