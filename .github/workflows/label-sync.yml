@@ -15,4 +15,4 @@ jobs:
     - uses: EndBug/label-sync@v1
       with:
         config-file: 'https://raw.githubusercontent.com/babyico/.github/master/.github/labels.yml'
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.TOKEN }}
