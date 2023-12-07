@@ -1,0 +1,32 @@
+## Deprecated
+
+### Shutdown:
+
+You'll no longer have to override event ```Shutdown``` as this is already done in code for you:  
+
+```cpp
+void UDiscordGameInstance::Shutdown()
+{
+  Super::Shutdown();
+
+  if (!DiscordRpc)
+      return;
+
+  SetDiscordPresence(EDiscordPresenceState::Clear);
+}
+```
+
+### Start and End Timpstamps:
+
+You no longer have to manually set timestamps, this gets handled for you in the ```DiscordGameInstance``` class
+
+```cpp
+StampRef = DiscordRpc->GetStartTimeStamp();
+```
+```cpp
+UFUNCTION(BlueprintPure)
+    int64 GetStartTimeStamp() const {return FDateTime::Now().ToUnixTimestamp(;)}
+```
+
+There was also a issue with mismatched types for timestamps which caused the plugin to not work in packaged builds which has now been fixed also.
+
