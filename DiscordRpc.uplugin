@@ -1,13 +1,13 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.1",
+	"VersionName": "1.0.0",
 	"FriendlyName": "Discord RPC",
 	"Description": "Wrap the Discord RPC library.",
 	"Category": "Messaging",
-	"CreatedBy": "Laith (Iconical), Chris Marsh & Louis Raverdy",
+	"CreatedBy": "Laith (Iconical) & Louis Raverdy",
 	"CreatedByURL": "https://github.com/babyico/DiscordRPC",
-	"DocsURL": "https://github.com/babyico/DiscordRPC",
+	"DocsURL": "https://discordrpc.vercel.app",
 	"MarketplaceURL": "",
 	"SupportURL": "https://patreon.com/babyiconcial",
 	"EngineVersion": "5.3.0",
@@ -22,5 +22,7 @@
 				"Win64"
 			]
 		}
-	]
+	],
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false
 }
